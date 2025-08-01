@@ -28,9 +28,11 @@ using ContosoPizzaContext context = new();
 
 // context.SaveChanges();
 
-var products = context.Products
-                .Where(p => p.Price > 10.00m)
-                .OrderBy(p => p.Name);
+var products = from product in context.Products
+                where product.Price > 10.00m
+                orderby product.Name
+                select product;
+
 
 foreach (Product p in products)
 {
