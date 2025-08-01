@@ -1,14 +1,8 @@
-// var builder = WebApplication.CreateBuilder(args);
-// var app = builder.Build();
-
-// app.MapGet("/", () => "Hello World!");
-
-// app.Run();
 
 using ContosoPizza.Data;
 using ContosoPizza.Models;
 
-using ContosoPizzaContext context = new();
+using ContosopizzaContext context = new();
 
 // Product veggieSpecial = new()
 // {
