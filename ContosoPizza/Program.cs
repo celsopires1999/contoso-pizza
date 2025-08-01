@@ -34,7 +34,7 @@ var veggieSpecial = context.Products
 
 if (veggieSpecial is not null)
 {
-    veggieSpecial.Price = 10.99m;
+    context.Remove(veggieSpecial);
     context.SaveChanges();
 }
 
